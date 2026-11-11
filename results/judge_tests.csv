@@ -1,0 +1,7 @@
+comparison,metric,mean_diff,p,p_bonf
+lgn vs mf,mean,0.5064,0.0,0.0
+lgn vs mf,hi,0.1555,0.0,0.0
+lgn vs popularity,mean,0.1145,0.2768,0.8305
+lgn vs popularity,hi,0.03,0.4259,1.0
+lgn vs random,mean,0.6173,0.0,0.0
+lgn vs random,hi,0.21,0.0,0.0

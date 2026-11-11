@@ -1,0 +1,6 @@
+dataset,source,epochs,recall20,ndcg20
+Gowalla,LightGCN paper (3 layers),~1000,0.183,0.1554
+Gowalla,Our replication,60,0.1487,0.1239
+LastFM,Our run (no paper figure),20,0.1294,0.0894
+ML-25M subset,Our run (new data),60,0.2625,0.2521
+GitHub stars,Our run (new data),300,0.0526,0.0529

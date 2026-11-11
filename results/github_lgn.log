@@ -1,0 +1,428 @@
+/content/LightGCN-PyTorch/code/dataloader.py:330: UserWarning: torch.sparse.SparseTensor(indices, values, shape, *, device=) is deprecated.  Please use torch.sparse_coo_tensor(indices, values, shape, dtype=, device=). (Triggered internally at /__w/pytorch/pytorch/torch/csrc/utils/tensor_new.cpp:653.)
+  return torch.sparse.FloatTensor(index, data, torch.Size(coo.shape))
+[0;30;43mCpp extension not loaded[0m
+>>SEED: 2020
+[0;30;43mloading [../data/github][0m
+11503 interactions for training
+2779 interactions for testing
+github Sparsity : 0.043909487794379885
+github is ready to go
+===========config================
+{'A_n_fold': 100,
+ 'A_split': False,
+ 'bigdata': False,
+ 'bpr_batch_size': 256,
+ 'decay': 0.0001,
+ 'dropout': 0,
+ 'keep_prob': 0.6,
+ 'latent_dim_rec': 64,
+ 'lightGCN_n_layers': 3,
+ 'lr': 0.001,
+ 'multicore': 0,
+ 'pretrain': 0,
+ 'test_u_batch_size': 100}
+cores for test: 1
+comment: lgn
+tensorboard: 0
+LOAD: 0
+Weight path: ./checkpoints
+Test Topks: [20]
+using bpr loss
+===========end===================
+[0;30;43muse NORMAL distribution initilizer[0m
+loading adjacency matrix
+successfully loaded...
+don't split the matrix
+lgn is already to go(dropout:0)
+load and save to /content/LightGCN-PyTorch/code/checkpoints/lgn-github-3-64.pth.tar
+[0;30;43mnot enable tensorflowboard[0m
+[0;30;43m[TEST][0m
+test_u_batch_size is too big for this dataset, try a small one 18
+{'precision': array([0.01333333]), 'recall': array([0.01294494]), 'ndcg': array([0.01649371])}
+EPOCH[1/300] loss0.689-|Sample:0.25|
+EPOCH[2/300] loss0.683-|Sample:0.24|
+EPOCH[3/300] loss0.672-|Sample:0.24|
+EPOCH[4/300] loss0.647-|Sample:0.26|
+EPOCH[5/300] loss0.610-|Sample:0.14|
+EPOCH[6/300] loss0.564-|Sample:0.14|
+EPOCH[7/300] loss0.532-|Sample:0.32|
+EPOCH[8/300] loss0.499-|Sample:0.14|
+EPOCH[9/300] loss0.476-|Sample:0.14|
+EPOCH[10/300] loss0.461-|Sample:0.15|
+[0;30;43m[TEST][0m
+test_u_batch_size is too big for this dataset, try a small one 18
+{'precision': array([0.02916667]), 'recall': array([0.05156274]), 'ndcg': array([0.04736431])}
+EPOCH[11/300] loss0.451-|Sample:0.14|
+EPOCH[12/300] loss0.435-|Sample:0.14|
+EPOCH[13/300] loss0.419-|Sample:0.14|
+EPOCH[14/300] loss0.401-|Sample:0.13|
+EPOCH[15/300] loss0.388-|Sample:0.14|
+EPOCH[16/300] loss0.384-|Sample:0.13|
+EPOCH[17/300] loss0.380-|Sample:0.14|
+EPOCH[18/300] loss0.372-|Sample:0.14|
+EPOCH[19/300] loss0.357-|Sample:0.13|
+EPOCH[20/300] loss0.346-|Sample:0.14|
+[0;30;43m[TEST][0m
+test_u_batch_size is too big for this dataset, try a small one 18
+{'precision': array([0.03833333]), 'recall': array([0.05972202]), 'ndcg': array([0.0555477])}
+EPOCH[21/300] loss0.337-|Sample:0.14|
+EPOCH[22/300] loss0.326-|Sample:0.14|
+EPOCH[23/300] loss0.313-|Sample:0.14|
+EPOCH[24/300] loss0.307-|Sample:0.14|
+EPOCH[25/300] loss0.300-|Sample:0.13|
+EPOCH[26/300] loss0.289-|Sample:0.14|
+EPOCH[27/300] loss0.282-|Sample:0.14|
+EPOCH[28/300] loss0.270-|Sample:0.14|
+EPOCH[29/300] loss0.269-|Sample:0.14|
+EPOCH[30/300] loss0.265-|Sample:0.14|
+[0;30;43m[TEST][0m
+test_u_batch_size is too big for this dataset, try a small one 18
+{'precision': array([0.04444444]), 'recall': array([0.0626217]), 'ndcg': array([0.06012133])}
+EPOCH[31/300] loss0.253-|Sample:0.14|
+EPOCH[32/300] loss0.247-|Sample:0.18|
+EPOCH[33/300] loss0.246-|Sample:0.24|
+EPOCH[34/300] loss0.241-|Sample:0.24|
+EPOCH[35/300] loss0.237-|Sample:0.24|
+EPOCH[36/300] loss0.227-|Sample:0.23|
+EPOCH[37/300] loss0.225-|Sample:0.24|
+EPOCH[38/300] loss0.216-|Sample:0.24|
+EPOCH[39/300] loss0.214-|Sample:0.14|
+EPOCH[40/300] loss0.209-|Sample:0.14|
+[0;30;43m[TEST][0m
+test_u_batch_size is too big for this dataset, try a small one 18
+{'precision': array([0.04888889]), 'recall': array([0.0667578]), 'ndcg': array([0.06575432])}
+EPOCH[41/300] loss0.200-|Sample:0.14|
+EPOCH[42/300] loss0.197-|Sample:0.16|
+EPOCH[43/300] loss0.195-|Sample:0.14|
+EPOCH[44/300] loss0.191-|Sample:0.14|
+EPOCH[45/300] loss0.189-|Sample:0.16|
+EPOCH[46/300] loss0.185-|Sample:0.14|
+EPOCH[47/300] loss0.178-|Sample:0.14|
+EPOCH[48/300] loss0.175-|Sample:0.16|
+EPOCH[49/300] loss0.174-|Sample:0.14|
+EPOCH[50/300] loss0.172-|Sample:0.14|
+[0;30;43m[TEST][0m
+test_u_batch_size is too big for this dataset, try a small one 18
+{'precision': array([0.05055556]), 'recall': array([0.0654122]), 'ndcg': array([0.066985])}
+EPOCH[51/300] loss0.171-|Sample:0.14|
+EPOCH[52/300] loss0.169-|Sample:0.31|
+EPOCH[53/300] loss0.161-|Sample:0.16|
+EPOCH[54/300] loss0.156-|Sample:0.14|
+EPOCH[55/300] loss0.153-|Sample:0.14|
+EPOCH[56/300] loss0.153-|Sample:0.16|
+EPOCH[57/300] loss0.153-|Sample:0.14|
+EPOCH[58/300] loss0.144-|Sample:0.14|
+EPOCH[59/300] loss0.143-|Sample:0.16|
+EPOCH[60/300] loss0.143-|Sample:0.14|
+[0;30;43m[TEST][0m
+test_u_batch_size is too big for this dataset, try a small one 18
+{'precision': array([0.05194444]), 'recall': array([0.07147657]), 'ndcg': array([0.06950598])}
+EPOCH[61/300] loss0.139-|Sample:0.14|
+EPOCH[62/300] loss0.137-|Sample:0.16|
+EPOCH[63/300] loss0.134-|Sample:0.14|
+EPOCH[64/300] loss0.134-|Sample:0.15|
+EPOCH[65/300] loss0.133-|Sample:0.15|
+EPOCH[66/300] loss0.129-|Sample:0.24|
+EPOCH[67/300] loss0.128-|Sample:0.25|
+EPOCH[68/300] loss0.123-|Sample:0.24|
+EPOCH[69/300] loss0.124-|Sample:0.24|
+EPOCH[70/300] loss0.116-|Sample:0.25|
+[0;30;43m[TEST][0m
+test_u_batch_size is too big for this dataset, try a small one 18
+{'precision': array([0.05166667]), 'recall': array([0.06908062]), 'ndcg': array([0.0696711])}
+EPOCH[71/300] loss0.122-|Sample:0.26|
+EPOCH[72/300] loss0.118-|Sample:0.14|
+EPOCH[73/300] loss0.116-|Sample:0.15|
+EPOCH[74/300] loss0.116-|Sample:0.14|
+EPOCH[75/300] loss0.111-|Sample:0.14|
+EPOCH[76/300] loss0.111-|Sample:0.13|
+EPOCH[77/300] loss0.109-|Sample:0.14|
+EPOCH[78/300] loss0.107-|Sample:0.14|
+EPOCH[79/300] loss0.106-|Sample:0.14|
+EPOCH[80/300] loss0.102-|Sample:0.13|
+[0;30;43m[TEST][0m
+test_u_batch_size is too big for this dataset, try a small one 18
+{'precision': array([0.04861111]), 'recall': array([0.06661469]), 'ndcg': array([0.06895631])}
+EPOCH[81/300] loss0.098-|Sample:0.14|
+EPOCH[82/300] loss0.096-|Sample:0.14|
+EPOCH[83/300] loss0.096-|Sample:0.14|
+EPOCH[84/300] loss0.092-|Sample:0.14|
+EPOCH[85/300] loss0.100-|Sample:0.14|
+EPOCH[86/300] loss0.092-|Sample:0.14|
+EPOCH[87/300] loss0.092-|Sample:0.14|
+EPOCH[88/300] loss0.092-|Sample:0.14|
+EPOCH[89/300] loss0.092-|Sample:0.15|
+EPOCH[90/300] loss0.089-|Sample:0.15|
+[0;30;43m[TEST][0m
+test_u_batch_size is too big for this dataset, try a small one 18
+{'precision': array([0.04944444]), 'recall': array([0.06864999]), 'ndcg': array([0.06906947])}
+EPOCH[91/300] loss0.089-|Sample:0.16|
+EPOCH[92/300] loss0.086-|Sample:0.14|
+EPOCH[93/300] loss0.088-|Sample:0.14|
+EPOCH[94/300] loss0.084-|Sample:0.16|
+EPOCH[95/300] loss0.086-|Sample:0.14|
+EPOCH[96/300] loss0.082-|Sample:0.14|
+EPOCH[97/300] loss0.077-|Sample:0.32|
+EPOCH[98/300] loss0.076-|Sample:0.14|
+EPOCH[99/300] loss0.078-|Sample:0.26|
+EPOCH[100/300] loss0.079-|Sample:0.25|
+[0;30;43m[TEST][0m
+test_u_batch_size is too big for this dataset, try a small one 18
+{'precision': array([0.04888889]), 'recall': array([0.06809738]), 'ndcg': array([0.06885229])}
+EPOCH[101/300] loss0.077-|Sample:0.24|
+EPOCH[102/300] loss0.078-|Sample:0.24|
+EPOCH[103/300] loss0.075-|Sample:0.25|
+EPOCH[104/300] loss0.075-|Sample:0.25|
+EPOCH[105/300] loss0.073-|Sample:0.16|
+EPOCH[106/300] loss0.069-|Sample:0.14|
+EPOCH[107/300] loss0.070-|Sample:0.14|
+EPOCH[108/300] loss0.071-|Sample:0.15|
+EPOCH[109/300] loss0.071-|Sample:0.14|
+EPOCH[110/300] loss0.070-|Sample:0.14|
+[0;30;43m[TEST][0m
+test_u_batch_size is too big for this dataset, try a small one 18
+{'precision': array([0.04777778]), 'recall': array([0.06667115]), 'ndcg': array([0.06687381])}
+EPOCH[111/300] loss0.067-|Sample:0.15|
+EPOCH[112/300] loss0.064-|Sample:0.14|
+EPOCH[113/300] loss0.067-|Sample:0.15|
+EPOCH[114/300] loss0.063-|Sample:0.14|
+EPOCH[115/300] loss0.065-|Sample:0.14|
+EPOCH[116/300] loss0.061-|Sample:0.14|
+EPOCH[117/300] loss0.063-|Sample:0.13|
+EPOCH[118/300] loss0.061-|Sample:0.14|
+EPOCH[119/300] loss0.062-|Sample:0.13|
+EPOCH[120/300] loss0.062-|Sample:0.14|
+[0;30;43m[TEST][0m
+test_u_batch_size is too big for this dataset, try a small one 18
+{'precision': array([0.0475]), 'recall': array([0.06604102]), 'ndcg': array([0.06593788])}
+EPOCH[121/300] loss0.059-|Sample:0.14|
+EPOCH[122/300] loss0.056-|Sample:0.15|
+EPOCH[123/300] loss0.059-|Sample:0.14|
+EPOCH[124/300] loss0.057-|Sample:0.14|
+EPOCH[125/300] loss0.058-|Sample:0.14|
+EPOCH[126/300] loss0.056-|Sample:0.14|
+EPOCH[127/300] loss0.055-|Sample:0.15|
+EPOCH[128/300] loss0.055-|Sample:0.14|
+EPOCH[129/300] loss0.053-|Sample:0.14|
+EPOCH[130/300] loss0.054-|Sample:0.13|
+[0;30;43m[TEST][0m
+test_u_batch_size is too big for this dataset, try a small one 18
+{'precision': array([0.04666667]), 'recall': array([0.06539238]), 'ndcg': array([0.06457261])}
+EPOCH[131/300] loss0.054-|Sample:0.15|
+EPOCH[132/300] loss0.052-|Sample:0.16|
+EPOCH[133/300] loss0.053-|Sample:0.23|
+EPOCH[134/300] loss0.055-|Sample:0.24|
+EPOCH[135/300] loss0.052-|Sample:0.23|
+EPOCH[136/300] loss0.050-|Sample:0.24|
+EPOCH[137/300] loss0.049-|Sample:0.23|
+EPOCH[138/300] loss0.049-|Sample:0.24|
+EPOCH[139/300] loss0.050-|Sample:0.14|
+EPOCH[140/300] loss0.049-|Sample:0.13|
+[0;30;43m[TEST][0m
+test_u_batch_size is too big for this dataset, try a small one 18
+{'precision': array([0.04722222]), 'recall': array([0.06547948]), 'ndcg': array([0.06458829])}
+EPOCH[141/300] loss0.047-|Sample:0.14|
+EPOCH[142/300] loss0.048-|Sample:0.14|
+EPOCH[143/300] loss0.045-|Sample:0.33|
+EPOCH[144/300] loss0.044-|Sample:0.14|
+EPOCH[145/300] loss0.045-|Sample:0.14|
+EPOCH[146/300] loss0.043-|Sample:0.17|
+EPOCH[147/300] loss0.046-|Sample:0.14|
+EPOCH[148/300] loss0.044-|Sample:0.13|
+EPOCH[149/300] loss0.045-|Sample:0.15|
+EPOCH[150/300] loss0.041-|Sample:0.14|
+[0;30;43m[TEST][0m
+test_u_batch_size is too big for this dataset, try a small one 18
+{'precision': array([0.04527778]), 'recall': array([0.06393167]), 'ndcg': array([0.06313946])}
+EPOCH[151/300] loss0.044-|Sample:0.14|
+EPOCH[152/300] loss0.043-|Sample:0.15|
+EPOCH[153/300] loss0.041-|Sample:0.14|
+EPOCH[154/300] loss0.042-|Sample:0.14|
+EPOCH[155/300] loss0.040-|Sample:0.14|
+EPOCH[156/300] loss0.041-|Sample:0.14|
+EPOCH[157/300] loss0.040-|Sample:0.13|
+EPOCH[158/300] loss0.040-|Sample:0.14|
+EPOCH[159/300] loss0.038-|Sample:0.14|
+EPOCH[160/300] loss0.039-|Sample:0.14|
+[0;30;43m[TEST][0m
+test_u_batch_size is too big for this dataset, try a small one 18
+{'precision': array([0.04583333]), 'recall': array([0.0640353]), 'ndcg': array([0.06195705])}
+EPOCH[161/300] loss0.041-|Sample:0.14|
+EPOCH[162/300] loss0.037-|Sample:0.14|
+EPOCH[163/300] loss0.038-|Sample:0.14|
+EPOCH[164/300] loss0.041-|Sample:0.14|
+EPOCH[165/300] loss0.037-|Sample:0.14|
+EPOCH[166/300] loss0.038-|Sample:0.26|
+EPOCH[167/300] loss0.036-|Sample:0.23|
+EPOCH[168/300] loss0.037-|Sample:0.24|
+EPOCH[169/300] loss0.034-|Sample:0.23|
+EPOCH[170/300] loss0.036-|Sample:0.24|
+[0;30;43m[TEST][0m
+test_u_batch_size is too big for this dataset, try a small one 18
+{'precision': array([0.04444444]), 'recall': array([0.06286764]), 'ndcg': array([0.06151553])}
+EPOCH[171/300] loss0.036-|Sample:0.24|
+EPOCH[172/300] loss0.035-|Sample:0.14|
+EPOCH[173/300] loss0.035-|Sample:0.14|
+EPOCH[174/300] loss0.035-|Sample:0.14|
+EPOCH[175/300] loss0.034-|Sample:0.14|
+EPOCH[176/300] loss0.035-|Sample:0.15|
+EPOCH[177/300] loss0.032-|Sample:0.14|
+EPOCH[178/300] loss0.034-|Sample:0.14|
+EPOCH[179/300] loss0.032-|Sample:0.16|
+EPOCH[180/300] loss0.032-|Sample:0.14|
+[0;30;43m[TEST][0m
+test_u_batch_size is too big for this dataset, try a small one 18
+{'precision': array([0.045]), 'recall': array([0.05999013]), 'ndcg': array([0.05981363])}
+EPOCH[181/300] loss0.033-|Sample:0.13|
+EPOCH[182/300] loss0.034-|Sample:0.14|
+EPOCH[183/300] loss0.031-|Sample:0.14|
+EPOCH[184/300] loss0.031-|Sample:0.14|
+EPOCH[185/300] loss0.031-|Sample:0.14|
+EPOCH[186/300] loss0.032-|Sample:0.14|
+EPOCH[187/300] loss0.031-|Sample:0.13|
+EPOCH[188/300] loss0.030-|Sample:0.13|
+EPOCH[189/300] loss0.029-|Sample:0.13|
+EPOCH[190/300] loss0.031-|Sample:0.13|
+[0;30;43m[TEST][0m
+test_u_batch_size is too big for this dataset, try a small one 18
+{'precision': array([0.04333333]), 'recall': array([0.05826815]), 'ndcg': array([0.05747144])}
+EPOCH[191/300] loss0.029-|Sample:0.30|
+EPOCH[192/300] loss0.029-|Sample:0.14|
+EPOCH[193/300] loss0.029-|Sample:0.13|
+EPOCH[194/300] loss0.029-|Sample:0.15|
+EPOCH[195/300] loss0.028-|Sample:0.13|
+EPOCH[196/300] loss0.028-|Sample:0.14|
+EPOCH[197/300] loss0.029-|Sample:0.14|
+EPOCH[198/300] loss0.027-|Sample:0.14|
+EPOCH[199/300] loss0.029-|Sample:0.14|
+EPOCH[200/300] loss0.029-|Sample:0.26|
+[0;30;43m[TEST][0m
+test_u_batch_size is too big for this dataset, try a small one 18
+{'precision': array([0.04305556]), 'recall': array([0.05785597]), 'ndcg': array([0.05574895])}
+EPOCH[201/300] loss0.027-|Sample:0.24|
+EPOCH[202/300] loss0.028-|Sample:0.23|
+EPOCH[203/300] loss0.027-|Sample:0.24|
+EPOCH[204/300] loss0.027-|Sample:0.24|
+EPOCH[205/300] loss0.029-|Sample:0.27|
+EPOCH[206/300] loss0.027-|Sample:0.13|
+EPOCH[207/300] loss0.027-|Sample:0.14|
+EPOCH[208/300] loss0.027-|Sample:0.16|
+EPOCH[209/300] loss0.026-|Sample:0.14|
+EPOCH[210/300] loss0.026-|Sample:0.15|
+[0;30;43m[TEST][0m
+test_u_batch_size is too big for this dataset, try a small one 18
+{'precision': array([0.04194444]), 'recall': array([0.05655408]), 'ndcg': array([0.05453158])}
+EPOCH[211/300] loss0.027-|Sample:0.13|
+EPOCH[212/300] loss0.026-|Sample:0.13|
+EPOCH[213/300] loss0.025-|Sample:0.13|
+EPOCH[214/300] loss0.025-|Sample:0.14|
+EPOCH[215/300] loss0.024-|Sample:0.13|
+EPOCH[216/300] loss0.024-|Sample:0.14|
+EPOCH[217/300] loss0.025-|Sample:0.13|
+EPOCH[218/300] loss0.025-|Sample:0.13|
+EPOCH[219/300] loss0.025-|Sample:0.14|
+EPOCH[220/300] loss0.025-|Sample:0.13|
+[0;30;43m[TEST][0m
+test_u_batch_size is too big for this dataset, try a small one 18
+{'precision': array([0.04277778]), 'recall': array([0.0577692]), 'ndcg': array([0.05397391])}
+EPOCH[221/300] loss0.024-|Sample:0.13|
+EPOCH[222/300] loss0.024-|Sample:0.14|
+EPOCH[223/300] loss0.025-|Sample:0.13|
+EPOCH[224/300] loss0.025-|Sample:0.14|
+EPOCH[225/300] loss0.024-|Sample:0.14|
+EPOCH[226/300] loss0.024-|Sample:0.14|
+EPOCH[227/300] loss0.023-|Sample:0.14|
+EPOCH[228/300] loss0.024-|Sample:0.15|
+EPOCH[229/300] loss0.024-|Sample:0.14|
+EPOCH[230/300] loss0.023-|Sample:0.14|
+[0;30;43m[TEST][0m
+test_u_batch_size is too big for this dataset, try a small one 18
+{'precision': array([0.04305556]), 'recall': array([0.05812216]), 'ndcg': array([0.05458116])}
+EPOCH[231/300] loss0.023-|Sample:0.14|
+EPOCH[232/300] loss0.023-|Sample:0.14|
+EPOCH[233/300] loss0.023-|Sample:0.14|
+EPOCH[234/300] loss0.023-|Sample:0.24|
+EPOCH[235/300] loss0.022-|Sample:0.24|
+EPOCH[236/300] loss0.022-|Sample:0.46|
+EPOCH[237/300] loss0.022-|Sample:0.23|
+EPOCH[238/300] loss0.021-|Sample:0.25|
+EPOCH[239/300] loss0.023-|Sample:0.26|
+EPOCH[240/300] loss0.022-|Sample:0.13|
+[0;30;43m[TEST][0m
+test_u_batch_size is too big for this dataset, try a small one 18
+{'precision': array([0.04277778]), 'recall': array([0.05681315]), 'ndcg': array([0.05478789])}
+EPOCH[241/300] loss0.021-|Sample:0.14|
+EPOCH[242/300] loss0.022-|Sample:0.13|
+EPOCH[243/300] loss0.021-|Sample:0.14|
+EPOCH[244/300] loss0.022-|Sample:0.14|
+EPOCH[245/300] loss0.022-|Sample:0.13|
+EPOCH[246/300] loss0.021-|Sample:0.15|
+EPOCH[247/300] loss0.021-|Sample:0.14|
+EPOCH[248/300] loss0.021-|Sample:0.14|
+EPOCH[249/300] loss0.021-|Sample:0.16|
+EPOCH[250/300] loss0.021-|Sample:0.14|
+[0;30;43m[TEST][0m
+test_u_batch_size is too big for this dataset, try a small one 18
+{'precision': array([0.04138889]), 'recall': array([0.05295357]), 'ndcg': array([0.05225146])}
+EPOCH[251/300] loss0.020-|Sample:0.14|
+EPOCH[252/300] loss0.021-|Sample:0.16|
+EPOCH[253/300] loss0.021-|Sample:0.14|
+EPOCH[254/300] loss0.020-|Sample:0.13|
+EPOCH[255/300] loss0.021-|Sample:0.14|
+EPOCH[256/300] loss0.020-|Sample:0.13|
+EPOCH[257/300] loss0.021-|Sample:0.13|
+EPOCH[258/300] loss0.020-|Sample:0.14|
+EPOCH[259/300] loss0.020-|Sample:0.14|
+EPOCH[260/300] loss0.020-|Sample:0.14|
+[0;30;43m[TEST][0m
+test_u_batch_size is too big for this dataset, try a small one 18
+{'precision': array([0.04111111]), 'recall': array([0.05290548]), 'ndcg': array([0.05288078])}
+EPOCH[261/300] loss0.020-|Sample:0.14|
+EPOCH[262/300] loss0.020-|Sample:0.14|
+EPOCH[263/300] loss0.020-|Sample:0.15|
+EPOCH[264/300] loss0.019-|Sample:0.14|
+EPOCH[265/300] loss0.019-|Sample:0.14|
+EPOCH[266/300] loss0.019-|Sample:0.14|
+EPOCH[267/300] loss0.019-|Sample:0.14|
+EPOCH[268/300] loss0.020-|Sample:0.23|
+EPOCH[269/300] loss0.020-|Sample:0.23|
+EPOCH[270/300] loss0.020-|Sample:0.22|
+[0;30;43m[TEST][0m
+test_u_batch_size is too big for this dataset, try a small one 18
+{'precision': array([0.04111111]), 'recall': array([0.05320037]), 'ndcg': array([0.05211905])}
+EPOCH[271/300] loss0.020-|Sample:0.23|
+EPOCH[272/300] loss0.019-|Sample:0.24|
+EPOCH[273/300] loss0.019-|Sample:0.25|
+EPOCH[274/300] loss0.019-|Sample:0.14|
+EPOCH[275/300] loss0.019-|Sample:0.14|
+EPOCH[276/300] loss0.019-|Sample:0.13|
+EPOCH[277/300] loss0.018-|Sample:0.13|
+EPOCH[278/300] loss0.018-|Sample:0.14|
+EPOCH[279/300] loss0.018-|Sample:0.13|
+EPOCH[280/300] loss0.018-|Sample:0.13|
+[0;30;43m[TEST][0m
+test_u_batch_size is too big for this dataset, try a small one 18
+{'precision': array([0.04083333]), 'recall': array([0.05347384]), 'ndcg': array([0.05315757])}
+EPOCH[281/300] loss0.018-|Sample:0.30|
+EPOCH[282/300] loss0.018-|Sample:0.13|
+EPOCH[283/300] loss0.018-|Sample:0.14|
+EPOCH[284/300] loss0.018-|Sample:0.16|
+EPOCH[285/300] loss0.018-|Sample:0.14|
+EPOCH[286/300] loss0.018-|Sample:0.14|
+EPOCH[287/300] loss0.018-|Sample:0.14|
+EPOCH[288/300] loss0.018-|Sample:0.14|
+EPOCH[289/300] loss0.018-|Sample:0.14|
+EPOCH[290/300] loss0.018-|Sample:0.14|
+[0;30;43m[TEST][0m
+test_u_batch_size is too big for this dataset, try a small one 18
+{'precision': array([0.04055556]), 'recall': array([0.05286971]), 'ndcg': array([0.05317909])}
+EPOCH[291/300] loss0.018-|Sample:0.14|
+EPOCH[292/300] loss0.018-|Sample:0.14|
+EPOCH[293/300] loss0.017-|Sample:0.14|
+EPOCH[294/300] loss0.017-|Sample:0.14|
+EPOCH[295/300] loss0.017-|Sample:0.14|
+EPOCH[296/300] loss0.018-|Sample:0.14|
+EPOCH[297/300] loss0.018-|Sample:0.15|
+EPOCH[298/300] loss0.017-|Sample:0.14|
+EPOCH[299/300] loss0.018-|Sample:0.14|
+EPOCH[300/300] loss0.018-|Sample:0.14|

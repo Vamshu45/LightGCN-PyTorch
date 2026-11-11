@@ -1,0 +1,1 @@
+{"n": 100.0, "exact": 0.18, "within1": 0.55, "kappa_unweighted": -0.03994927076727972, "kappa_linear": -0.02793137671912649, "kappa_quadratic": 0.017050515332739602, "kappa_binary_ge4": 0.030172413793103425, "spearman": 0.011842226121114203, "human_mean": 2.79, "llm_mean": 3.08}
