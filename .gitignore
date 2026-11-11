@@ -14,3 +14,11 @@ __pycache__/
 *.npy
 *.so
 .rendered
+   # --- COMP8240 project ---
+   # raw crawl contains real GitHub usernames: never publish
+   github_raw.json
+   *.pth.tar
+   .env
+   *.key
+   # keep training logs that back the report
+   !results/*.log
